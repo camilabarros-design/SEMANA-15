@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conheça Ibirité — MG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/login.js"></script>
+</head>
+<body data-page="index">
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="index.html" class="logotipo">
+        <div class="logo-icone">IB</div>
+        <div class="logo-textos">
+          <span class="logo-cidade">Ibirité</span>
+          <span class="logo-estado">Minas Gerais</span>
+        </div>
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="#destaque" class="nav-link">Destaques</a>
+        <a href="#todos" class="nav-link">Locais</a>
+        <a href="favoritos.html" class="nav-link nav-link-favs">&#9829; Favoritos</a>
+        <a href="visualizacao.html" class="nav-link nav-link-viz">&#128202; Visualização</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <div id="area-login"></div>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">&#9776;</button>
+    </div>
+    <nav class="nav-mobile" id="nav-mobile">
+      <a href="index.html">Home</a>
+      <a href="#destaque">Destaques</a>
+      <a href="#todos">Locais</a>
+      <a href="favoritos.html">&#9829; Meus Favoritos</a>
+      <a href="visualizacao.html">&#128202; Visualização</a>
+      <a href="#sobre">Sobre</a>
+      <div id="area-login-mobile"></div>
+    </nav>
+  </header>
+
+  <section class="city-hero">
+    <div class="city-hero-bg"></div>
+    <div class="container city-hero-content">
+      <p class="city-hero-label">&#128205; Região Metropolitana de Belo Horizonte</p>
+      <h1 class="city-hero-titulo">Conheça <span>Ibirité</span></h1>
+      <p class="city-hero-sub">Uma cidade de 170 mil habitantes, localização estratégica, natureza, comunidade e história no coração de Minas Gerais.</p>
+      <div class="city-hero-stats">
+        <div class="stat-item"><strong>170 mil</strong><span>Habitantes</span></div>
+        <div class="stat-item"><strong>72 km²</strong><span>Área total</span></div>
+        <div class="stat-item"><strong>RMBH</strong><span>Região Metro.</span></div>
+      </div>
+      <a href="#destaque" class="btn-hero">Explorar a cidade &#8595;</a>
+    </div>
+  </section>
+
+  <section id="destaque" class="secao-destaque">
+    <div class="container">
+      <div class="secao-header">
+        <h2 class="secao-titulo">Itens em Destaque <span class="secao-titulo-sub">(entidade principal)</span></h2>
+      </div>
+    </div>
+    <div class="carrossel-wrapper">
+      <button class="carrossel-btn" id="prev-btn" aria-label="Anterior">&#8249;</button>
+      <div class="carrossel-viewport">
+        <div class="carrossel-track" id="carrossel-track"></div>
+      </div>
+      <button class="carrossel-btn" id="next-btn" aria-label="Próximo">&#8250;</button>
+      <div class="carrossel-dots" id="carrossel-dots"></div>
+    </div>
+  </section>
+
+  <section id="todos" class="secao-todos">
+    <div class="container">
+      <div class="secao-header">
+        <h2 class="secao-titulo">Todos os itens <span class="secao-titulo-sub">(entidade principal)</span></h2>
+        <p class="secao-subtitulo">Clique em um local para ver detalhes e fotos associadas. Use o &#9825; para favoritar.</p>
+      </div>
+      <div class="cards-grid" id="cards-grid"></div>
+    </div>
+  </section>
+
+  <section id="sobre" class="secao-sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-col">
+          <h3 class="sobre-titulo">Sobre</h3>
+          <p>Este site foi desenvolvido como projeto acadêmico da disciplina de Desenvolvimento Web. O objetivo é apresentar os principais locais e bairros de Ibirité – MG com informações dinâmicas, geradas via JavaScript a partir de uma estrutura JSON.</p>
+          <p>O site é totalmente responsivo, adaptando-se a desktops, tablets e smartphones.</p>
+          <div class="redes-sociais">
+            <span class="redes-label">Redes Sociais</span>
+            <a href="https://www.instagram.com/camila.vbx/" class="rede-btn" aria-label="Instagram">&#128248;</a>
+          </div>
+        </div>
+        <div class="sobre-col">
+          <h3 class="sobre-titulo">Autoria</h3>
+          <div class="autor-card">
+            <div class="autor-avatar">&#128100;</div>
+            <div class="autor-info">
+              <p><strong>Aluno:</strong> Camila Victoria de Barros</p>
+              <p><strong>Curso:</strong> ADS</p>
+              <p><strong>Turma:</strong> 1º Período</p>
+              <p><strong>Matricula:</strong> 1659655</p>
+              <p><strong>Disciplina:</strong> Desenvolvimento Web</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Conheça Ibirité</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
