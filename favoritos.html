@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meus Favoritos — Conheça Ibirité</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/login.js"></script>
+</head>
+<body data-page="favoritos">
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="index.html" class="logotipo">
+        <div class="logo-icone">IB</div>
+        <div class="logo-textos">
+          <span class="logo-cidade">Ibirité</span>
+          <span class="logo-estado">Minas Gerais</span>
+        </div>
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="favoritos.html" class="nav-link active nav-link-favs">&#9829; Meus Favoritos</a>
+        <a href="visualizacao.html" class="nav-link nav-link-viz">&#128202; Visualização</a>
+        <div id="area-login"></div>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">&#9776;</button>
+    </div>
+    <nav class="nav-mobile" id="nav-mobile">
+      <a href="index.html">Home</a>
+      <a href="favoritos.html">&#9829; Meus Favoritos</a>
+      <a href="visualizacao.html">&#128202; Visualização</a>
+      <div id="area-login-mobile"></div>
+    </nav>
+  </header>
+
+  <section class="secao-favoritos">
+    <div class="container">
+      <div class="secao-header">
+        <h2 class="secao-titulo">Meus Favoritos <span class="secao-titulo-sub">(itens salvos)</span></h2>
+        <p class="secao-subtitulo favoritos-saudacao" id="favoritos-saudacao"></p>
+      </div>
+      <div class="cards-grid" id="favoritos-grid"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Conheça Ibirité</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
