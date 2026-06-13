@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visualização de Dados — Conheça Ibirité</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <script src="assets/js/login.js"></script>
+</head>
+<body data-page="visualizacao">
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="index.html" class="logotipo">
+        <div class="logo-icone">IB</div>
+        <div class="logo-textos">
+          <span class="logo-cidade">Ibirité</span>
+          <span class="logo-estado">Minas Gerais</span>
+        </div>
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">&#8592; Voltar</a>
+        <a href="#mapa" class="nav-link">Mapa</a>
+        <a href="#graficos" class="nav-link">Gráficos</a>
+        <a href="favoritos.html" class="nav-link nav-link-favs">&#9829; Favoritos</a>
+        <div id="area-login"></div>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">&#9776;</button>
+    </div>
+    <nav class="nav-mobile" id="nav-mobile">
+      <a href="index.html">&#8592; Voltar à Home</a>
+      <a href="#mapa">Mapa Interativo</a>
+      <a href="#graficos">Gráficos</a>
+      <a href="favoritos.html">&#9829; Meus Favoritos</a>
+      <div id="area-login-mobile"></div>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container page-hero-content">
+      <p class="page-hero-label">&#128202; Apresentação Dinâmica de Dados</p>
+      <h1>Visualização dos <span>Lugares Turísticos</span></h1>
+      <p>Explore os locais de Ibirité de forma visual e interativa: mapa com marcadores nos endereços exatos, gráficos de atrações e avaliações.</p>
+    </div>
+  </section>
+
+  <section class="viz-section">
+    <div class="container">
+      <div class="viz-section-header">
+        <span class="viz-badge">Resumo</span>
+        <h2>Dados Gerais do Município</h2>
+        <p>Visão geral dos dados cadastrados sobre os locais turísticos de Ibirité.</p>
+      </div>
+      <div class="stats-row" id="stats-row"></div>
+    </div>
+  </section>
+
+  <section id="mapa" class="viz-section">
+    <div class="container">
+      <div class="viz-section-header">
+        <span class="viz-badge">Leaflet + OpenStreetMap</span>
+        <h2>Mapa Interativo com Marcadores dos Locais</h2>
+        <p>Marcadores nos endereços reais de cada ponto turístico de Ibirité. Clique para ver informações.</p>
+      </div>
+      <div id="map"></div>
+      <div class="map-legend" id="map-legend"></div>
+    </div>
+  </section>
+
+  <section id="graficos" class="viz-section">
+    <div class="container">
+      <div class="viz-section-header">
+        <span class="viz-badge">Chart.js</span>
+        <h2>Gráficos Dinâmicos</h2>
+        <p>Visualize a quantidade de atrações por tipo e as avaliações médias de cada local.</p>
+      </div>
+      <div class="charts-grid">
+        <div class="chart-card">
+          <h3>Quantidade de Atrações por Tipo</h3>
+          <p>Distribuição das fotos/atrações associadas a cada categoria de local.</p>
+          <div class="chart-wrap"><canvas id="chartBarras"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>Avaliação Média por Local</h3>
+          <p>Nota média estimada com base na popularidade e relevância de cada local.</p>
+          <div class="chart-wrap"><canvas id="chartAvaliacao"></canvas></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container"><p>Conheça Ibirité — Visualização de Dados</p></div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/visualizacao.js"></script>
+</body>
+</html>
