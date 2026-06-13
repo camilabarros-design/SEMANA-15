@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalhes — Conheça Ibirité</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/login.js"></script>
+</head>
+<body class="pagina-detalhe" data-page="detalhe">
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="index.html" class="logotipo">
+        <div class="logo-icone">IB</div>
+        <div class="logo-textos">
+          <span class="logo-cidade">Ibirité</span>
+          <span class="logo-estado">Minas Gerais</span>
+        </div>
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">&#8592; Voltar</a>
+        <a href="#info" class="nav-link">Informações</a>
+        <a href="#fotos" class="nav-link">Fotos</a>
+        <a href="favoritos.html" class="nav-link nav-link-favs">&#9829; Favoritos</a>
+        <a href="visualizacao.html" class="nav-link nav-link-viz">&#128202; Visualização</a>
+        <div id="area-login"></div>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">&#9776;</button>
+    </div>
+    <nav class="nav-mobile" id="nav-mobile">
+      <a href="index.html">&#8592; Voltar à Home</a>
+      <a href="#info">Informações</a>
+      <a href="#fotos">Fotos</a>
+      <a href="favoritos.html">&#9829; Meus Favoritos</a>
+      <a href="visualizacao.html">&#128202; Visualização</a>
+      <div id="area-login-mobile"></div>
+    </nav>
+  </header>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="index.html">Ibirité</a>
+      <span class="breadcrumb-sep">&#8250;</span>
+      <span id="breadcrumb-local">Local</span>
+    </div>
+  </div>
+
+  <main>
+    <section id="info" class="secao-detalhe-info">
+      <div class="container">
+        <div class="secao-header">
+          <h2 class="secao-titulo">Informações Gerais <span class="secao-titulo-sub">(entidade principal)</span></h2>
+        </div>
+        <div id="detalhe-info"></div>
+      </div>
+    </section>
+
+    <section id="fotos" class="secao-detalhe-fotos">
+      <div class="container">
+        <div class="secao-header">
+          <h2 class="secao-titulo">Fotos Associadas</h2>
+          <p class="secao-subtitulo">Pontos e locais de interesse associados a este item</p>
+        </div>
+        <div class="fotos-grid" id="detalhe-fotos"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Conheça Ibirité</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
