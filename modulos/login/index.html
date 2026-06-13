@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — Conheça Ibirité</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+  <script src="../../assets/js/login.js"></script>
+</head>
+<body class="login-page" data-page="login">
+
+  <main class="login-main">
+    <div class="login-card">
+
+      <a href="../../index.html" class="login-logo">
+        <div class="logo-icone" style="background:#1f5c3a; color:#e8b04a;">IB</div>
+        <div class="logo-textos" style="color:#1f5c3a;">
+          <span class="logo-cidade">Ibirité</span>
+          <span class="logo-estado" style="color:#7a7a7a;">Minas Gerais</span>
+        </div>
+      </a>
+
+      <h1 class="login-titulo">Acesse sua conta</h1>
+      <p class="login-sub">Faça login para salvar seus locais favoritos</p>
+
+      <form id="form-login" novalidate>
+        <div class="form-grupo">
+          <label for="campo-login">Login</label>
+          <input type="text" id="campo-login" name="login" placeholder="Digite seu login" autocomplete="username" />
+        </div>
+        <div class="form-grupo">
+          <label for="campo-senha">Senha</label>
+          <input type="password" id="campo-senha" name="senha" placeholder="Digite sua senha" autocomplete="current-password" />
+        </div>
+        <button type="submit" class="btn-login">Entrar</button>
+        <p class="msg-login" id="msg-login"></p>
+      </form>
+
+      <div class="login-hint">
+        <p>Usuários disponíveis para teste:</p>
+        <p><code>admin</code> / <code>123</code> &nbsp;&nbsp; ou &nbsp;&nbsp; <code>user</code> / <code>123</code></p>
+      </div>
+
+      <a href="../../index.html" class="login-voltar">&#8592; Voltar para a Home sem fazer login</a>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>Conheça Ibirité — MG</p></div>
+  </footer>
+
+  <script src="login-form.js"></script>
+</body>
+</html>
